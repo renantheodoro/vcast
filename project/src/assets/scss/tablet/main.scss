@@ -1,0 +1,93 @@
+@import "../partials/variables";
+@import "../partials/mixins";
+@import "../partials/reset";
+@import "../partials/fonts";
+@import "../partials/helpers";
+
+@import "modules/header";
+@import "modules/footer";
+@import "modules/sidenav";
+@import "modules/sideslide";
+@import "modules/warnings";
+@import "modules/transmission";
+
+@import "components/list";
+@import "components/forms";
+@import "components/buttons";
+@import "components/alert";
+@import "components/toast";
+@import "components/overlay";
+@import "components/tooltip";
+@import "components/loader";
+@import "components/media";
+
+
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#app {
+    font-family: $gilroy;
+    width: 100%;
+    height: 100vh;
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding: $lateral-padding;
+    }
+
+    .base {
+        @include size(100%)
+    }
+
+    .view {
+        width: 100%;
+        height: calc(100vh - #{$header-height-t} - #{$footer-height-t});
+        overflow-x: hidden;
+        overflow-y: auto;
+        position: relative;
+
+        &.no-scroll {
+            overflow: hidden;
+        }
+
+        &.without-footer {
+            height: calc(100vh - #{$footer-height-t});
+        }
+
+        &.with-footer {
+            height: calc(100vh - #{$footer-height-s});
+        }
+
+        &.full {
+            height: 100%;
+        }
+
+        background: {
+            image: url("~@/assets/images/BG.png");
+            position: center;
+            repeat: no-repeat;
+            size: cover;
+        }
+
+        .view-internal {
+            @include size(100%);
+            padding-top: 35px;
+        }
+    }
+
+    .center-view {
+        @include flex(center, center, column);
+        @include size(100%);
+    }
+}

@@ -1,0 +1,10 @@
+#app {
+    .square {
+        position: absolute;
+        z-index: 1;
+
+        @media (orientation: landscape) {
+            display: none;
+        }
+    }
+}

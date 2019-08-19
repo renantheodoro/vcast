@@ -1,0 +1,43 @@
+#sideslide {
+    @include bgapp;
+}
+
+#about {
+    @include size(100%);
+    padding: 10px #{$space-lateral};
+
+    @include font($gilroy, $normal, 600);
+    line-height: 1.5;
+
+    p {
+        margin-top: 0px;
+
+        strong {
+            @include font($gilroy-bold, $normal, 600);
+            line-height: 1.5;
+        }
+    }
+
+    #copyright {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 0;
+        padding: $space-lateral;
+
+        @media (orientation: landscape) {
+            margin-top: 20px;
+            position: relative;
+        }
+
+        div {
+            margin-top: 0px;
+            font-size: $small
+        }
+    }
+
+    .block-section {
+        margin-bottom: 20px
+    }
+
+}

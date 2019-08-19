@@ -1,0 +1,176 @@
+$item-media-width: 70px;
+$item-before-space: 20px;
+$item-before-size: 35px;
+$item-text-width: 100%;
+
+#app {
+    .item-content {
+        @include flex(space-between, center, row);
+        color: $blue-secondary;
+        // background-color: $white;
+
+        width: 100%;
+        min-height: 60px;
+
+        &.grey {
+            background-color: $grey-light-1;
+        }
+
+        &.stripped {
+            &:nth-child(odd) {
+                background-color: transparent;
+            }
+
+            &:nth-child(even) {
+                background-color: rgba(119, 119, 119, 0.2);
+            }
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        .item-before {
+            min-width: $item-before-size;
+            min-height: $item-before-size;
+            margin-right: 10px;
+
+            svg {
+                @include size(35px)
+            }
+
+            &+.item-text {
+                width: calc(#{$item-text-width} - #{$item-before-size} - 10px);
+            }
+
+            .media {
+                @include flex;
+                @include size($item-media-width);
+                @include circle;
+                overflow: hidden;
+
+                img {
+                    @include size(100%);
+                    object-fit: cover;
+                }
+
+                &.bordered {
+                    border: 1px solid $grey-medium-1;
+
+                    svg {
+                        @include size(45px)
+                    }
+                }
+            }
+
+        }
+
+        .item-text {
+            width: $item-text-width;
+            @include flex(space-between, center, row);
+            @include font($gilroy, $bigger);
+
+            color: $black-2;
+
+            .item-inner {
+                @include flex(center, flex-start, column);
+            }
+
+            strong {
+                @include font($gilroy, $normal, 800);
+                display: block;
+            }
+
+            .item-after {
+                float: right;
+
+                .option {
+                    span {
+                        padding-left: 0;
+                        width: 25px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+
+        .item-link {
+            @include flex(space-between, center, row);
+
+            padding: 10px #{$space-lateral};
+            width: 100%;
+            min-height: 120px;
+
+            color: $black-2;
+        }
+
+        .full-btn {
+            @include size(100%);
+            color: $blue-secondary;
+            @include flex;
+            height: 60px;
+            // background-color: rgba(119, 119, 119, 0.42);
+            background-color: $grey-icon;
+            color: $white;
+        }
+
+    }
+
+    .simple-list {
+        width: 100%;
+
+        .list-item {
+            display: block;
+
+            a {
+                padding: $lateral-padding;
+                @include font($gilroy, $big, 500);
+                color: $grey-medium-1;
+                line-height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                font-size: $normal;
+                padding: 5px #{$space-lateral};
+
+                i.rotate {
+                    transform: rotate(-180deg)
+                }
+
+                span {
+                    display: inline-block;
+                    margin-left: 10px
+                }
+            }
+
+            small {
+                padding: 5px #{$space-lateral};
+                font-size: $middle;
+                display: inline-block;
+            }
+        }
+    }
+
+    .selection-mode.list-padding-bottom {
+        padding-bottom: 120px;
+    }
+}
+
+#list-view {
+    height: calc(100% - #{$list-header-height});
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+
+    &.selection-mode {
+        height: calc(100% - #{$list-header-height} - 119px);
+    }
+}
+
+#list-header {
+    max-height: $list-header-height;
+
+    i {
+        font-size: 30px;
+    }
+}

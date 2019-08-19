@@ -1,0 +1,55 @@
+/* Gilroy */
+@font-face {
+    font-family: 'gilroy-regular';
+    src: url('~@/assets/fonts/gilroylight-webfont.woff2') format('woff2'),
+        url('~@/assets/fonts/gilroylight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Montserrat */
+@font-face {
+    font-family: 'montserrat-light';
+    src: url('~@/assets/fonts/montserrat-v12-latin-300-webfont.woff2') format('woff2'),
+        url('~@/assets/fonts/montserrat-v12-latin-300-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserrat-regular';
+    src: url('~@/assets/fonts/montserrat-v12-latin-500-webfont.woff2') format('woff2'),
+        url('~@/assets/fonts/montserrat-v12-latin-500-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserrat-semibold';
+    src: url('~@/assets/fonts/montserrat-v12-latin-600-webfont.woff2') format('woff2'),
+        url('~@/assets/fonts/montserrat-v12-latin-600-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserrat-bold';
+    src: url('~@/assets/fonts/montserrat-v12-latin-700-webfont.woff2') format('woff2'),
+        url('~@/assets/fonts/montserrat-v12-latin-700-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* @font-face {
+    font-family: 'montserrat-regular';
+    src: url('~@/assets/fonts/montserrat-v12-latin-regular-webfont.woff2') format('woff2'),
+        url('~@/assets/fonts/montserrat-v12-latin-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+} */

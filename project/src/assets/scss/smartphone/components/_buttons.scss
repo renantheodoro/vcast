@@ -1,0 +1,131 @@
+#app {
+    .close {
+        position: relative;
+        text-align: right;
+        float: right;
+        width: 20px;
+
+        button {
+            float: right;
+            display: block;
+        }
+    }
+
+    .button-action {
+        @extend %button-action-style;
+
+        text-transform: uppercase;
+        // font-weight: 700;
+
+        &.full {
+            width: 100%
+        }
+
+        &.blue {
+            border: 1px solid $blue-primary !important;
+            background-color: $blue-primary !important;
+            color: $white;
+        }
+
+        &.grey {
+            background-color: $white !important;
+            border: 1px solid $grey-light-4 !important;
+            color: $grey-medium-1 !important;
+
+            &.disabled {
+                color: $white !important;
+                background-color: $grey-medium-2 !important;
+            }
+        }
+
+        &.white {
+            border: 1px solid $blue-primary !important;
+            color: $blue-primary;
+            background-color: $white !important;
+        }
+
+        // &:focus {
+        //     color: $blue-primary;
+        //     background-color: $white !important;
+        // }
+    }
+
+    .button-status {
+        @include flex;
+        position: fixed;
+        bottom: calc(#{$footer-height-t} - 1px);
+        left: 0;
+        z-index: 2;
+
+        // width: calc(100% - 6px);
+        width: calc(100%);
+        height: 120px;
+        padding: 0;
+
+        @include font($gilroy, $normal, 700);
+
+        background-color: $grey-light-1 !important;
+        color: $grey-medium-1 !important;
+
+        &.able {
+            background-color: $grey-medium-2 !important;
+            color: $white !important;
+        }
+    }
+
+    .button-send {
+        @include flex;
+        @include circle;
+        @include size(35px);
+        background-color: $blue-primary !important;
+
+        &:focus {
+            background-color: $blue-primary !important;
+        }
+
+        // position: fixed;
+        // bottom: 25px;
+        // right: #{$space-lateral};
+    }
+
+    .range {
+        margin-bottom: 20px;
+
+        &-row {
+            @include flex(space-between);
+            padding-left: 20px;
+        }
+
+        &-title {
+            @include font($gilroy, $big, 500);
+            color: $grey-medium-1;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        &-value {
+            @include font($gilroy, 90px, 800);
+            color: $grey-medium-1;
+        }
+
+        &-button {
+            @include size(60px);
+            @include flex;
+            @include font($gilroy, 70px, 800);
+            color: $grey-medium-1;
+
+        }
+
+    }
+
+    .button-icon {
+        &.right-icon {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%)
+        }
+    }
+
+
+}

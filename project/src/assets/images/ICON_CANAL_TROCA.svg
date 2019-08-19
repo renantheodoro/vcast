@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="31px" viewBox="0 0 28 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>ICON - SWITCH</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="CANAL" transform="translate(-44.000000, -14.000000)" stroke="#343433">
+            <g id="ICON---SWITCH">
+                <g transform="translate(41.000000, 14.448718)">
+                    <g id="Group-9" transform="translate(5.133333, 0.733333)">
+                        <path d="M9.53333333,2.93333333 C4.08742165,4.08185697 0,8.89780534 0,14.6664461 C0,20.4350869 4.08742165,25.2510353 9.53333333,26.4" id="Stroke-1" stroke-width="2.5"></path>
+                        <path d="M14.6666667,26.4 C20.1125784,25.2510353 24.2,20.435528 24.2,14.6664461 C24.2,8.89824641 20.1125784,4.08229803 14.6666667,2.93333333" id="Stroke-3" stroke-width="2.5"></path>
+                        <polyline id="Stroke-5" stroke-width="2.5" stroke-linejoin="round" transform="translate(16.226969, 3.891357) rotate(5.000000) translate(-16.226969, -3.891357) " points="16.795088 7.15017904 13.8735352 2.74450718 18.5804036 0.632535807"></polyline>
+                        <polyline id="Stroke-5-Copy" stroke-width="2.5" stroke-linejoin="round" transform="translate(9.116723, 25.911244) rotate(-168.000000) translate(-9.116723, -25.911244) " points="9.68484166 29.1700657 6.76328878 24.7643938 11.4701573 22.6524225"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

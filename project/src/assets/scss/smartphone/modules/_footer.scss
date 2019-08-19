@@ -1,0 +1,37 @@
+#app {
+    footer {
+        width: 100%;
+        height: $footer-height-s;
+        background-color: $blue-primary;
+        color: $white;
+        @include flex;
+        position: relative;
+        // bottom: constant(safe-area-inset-bottom); /* iOS 11.0 */
+        // bottom: env(safe-area-inset-bottom); /* iOS 11.2 */
+
+        &>.container {
+            height: 100%;
+            @include flex(space-between);
+        }
+    }
+
+    #main-menu {
+        .container {
+            @include size(100%);
+
+            a, .button-send {
+                @include flex;
+                @include size($footer-height-t);
+                color: $white;
+
+                svg {
+                    @include size(28px);
+                    color: $white;
+                    fill: $white;
+                }
+            }
+        }
+    }
+
+    
+}

@@ -1,0 +1,42 @@
+.photo {
+    @include size(240px);
+    @include circle;
+    @include flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background: $grey-light-1;
+    overflow: hidden;
+    position: relative;
+
+    label {
+        display: block;
+        @include size(100%);
+    }
+
+    .media {
+        @include flex;
+        @include size(100%);
+
+        img {
+            @include size(100%);
+            object-fit: cover;
+        }
+    }
+
+}
+
+#image-file {
+    display: none
+}
+
+#editUser {
+    .col {
+        padding: 0;
+    }
+}
+
+#user-info {
+    .row:last-child {
+        margin-bottom: 0
+    }
+}

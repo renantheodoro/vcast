@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="138px" height="138px" viewBox="0 0 138 138" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>icon - Play</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="2.1.1-AVISO---EM-BREVE" transform="translate(-233.000000, -584.000000)" stroke="#343433">
+            <g id="LAYOUT" transform="translate(-1.000000, 0.000000)">
+                <g id="ICONE---PLAY" transform="translate(227.000000, 559.000000)">
+                    <g id="Group-5" transform="translate(9.728000, 27.928571)">
+                        <path d="M24.888799,117.865467 C26.9779519,119.529235 29.1903705,121.084358 31.5225826,122.519279 C62.6827888,141.683528 103.500552,131.99507 122.692401,100.878737 C141.883672,69.7629829 132.180975,29.002113 101.021347,9.83786416 C69.8617198,-9.32638472 29.0433774,0.362072927 9.85210715,31.4784054 C-5.21467779,55.906148 -2.47331576,86.278148 14.4777577,107.478331" id="Stroke-1" stroke-width="4"></path>
+                        <path d="M46.208,93.9563584 L46.208,37.1865821 C46.208,33.7335899 49.9642583,31.6299369 52.8577698,33.4629141 L97.673247,61.8475137 C100.391584,63.5691042 100.391584,67.5738363 97.673247,69.2954267 L52.8577698,97.6800263 C49.9642583,99.5130036 46.208,97.4087734 46.208,93.9563584 Z" id="Stroke-3" stroke-width="4"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

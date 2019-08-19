@@ -1,0 +1,16 @@
+<template>
+<svg xmlns="http://www.w3.org/2000/svg" width="125" height="154" viewBox="0 0 125 154">
+    <g fill="none" fill-rule="evenodd" stroke="#8E8E8E" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+        <path d="M30.468 120.066a55.106 55.106 0 0 0 5.455 3.832c25.625 15.783 59.193 7.804 74.975-17.821 15.783-25.625 7.803-59.193-17.821-74.975-25.625-15.783-59.193-7.804-74.975 17.821-12.39 20.117-10.136 45.13 3.804 62.589"/>
+        <path d="M74.834 64L71.84 87.691C71.383 91.293 68.235 94 64.5 94c-3.735 0-6.883-2.707-7.338-6.309l-5.067-40.065C51.18 40.386 56.993 34 64.5 34s13.32 6.386 12.405 13.626M74 113a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/>
+    </g>
+</svg>
+
+
+</template>
+
+<script>
+export default {
+  name: "IconExclamation"
+};
+</script>

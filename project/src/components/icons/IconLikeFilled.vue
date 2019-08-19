@@ -1,0 +1,52 @@
+<template>
+  <svg
+    version="1.1"
+    id="Layer_1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    x="0px"
+    y="0px"
+    viewBox="0 0 15.4 12"
+    style="enable-background:new 0 0 15.4 12;"
+    xml:space="preserve"
+  >
+    <g id="Symbols">
+      <g id="LIKE-ATIVADO" transform="translate(-11.000000, -4.000000)">
+        <g id="Group-7" transform="translate(8.000000, 4.000000)">
+          <path
+            id="Fill-1"
+            class="st0"
+            d="M15.7,12c0.6,0,1.1-0.5,1.2-1.1L17.7,6c0.1-0.8-0.5-1.5-1.2-1.5H14c-0.2,0-0.3-0.2-0.3-0.4
+				c0.3-1,0.6-2.4,0.6-3C14.5,0.4,14,0,13.4,0c-0.5,0-0.9,0.4-1,1.3c-0.2,0.9-0.5,2-1.4,3.2C10.4,5.5,9,6.1,8.2,6.4
+				C7.9,6.5,7.7,6.7,7.7,7v4.4C7.7,11.7,8,12,8.3,12H15.7z"
+          ></path>
+        </g>
+      </g>
+    </g>
+    <g id="Symbols_1_">
+      <g id="LIKE-ATIVADO_1_" transform="translate(-8.000000, -10.000000)">
+        <g id="Group-7_1_" transform="translate(8.000000, 4.000000)">
+          <path
+            id="Fill-4_1_"
+            class="st0"
+            d="M2.7,18H1.5c-0.5,0-0.8-0.3-0.8-0.6V13c0-0.3,0.4-0.6,0.8-0.6h1.2c0.5,0,0.8,0.3,0.8,0.6v4.4
+				C3.5,17.7,3.2,18,2.7,18"
+          ></path>
+        </g>
+      </g>
+    </g>
+  </svg>
+</template>
+
+<script>
+export default {
+  name: "IconLikeFilled"
+};
+</script>
+<style lang="scss" scoped>
+.st0 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #ffffff;
+}
+</style>

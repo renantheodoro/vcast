@@ -1,0 +1,150 @@
+#app {
+    footer {
+        width: 100%;
+        height: $footer-height-t;
+        background-color: $blue-primary;
+        color: $white;
+        @include flex;
+
+        @media (max-width: 600px) {
+            height: $footer-height-s;
+        }
+
+        &>.container {
+            height: 100%;
+            @include flex(space-between);
+        }
+
+        &.mobile-chat {
+            background-color: $white;
+
+            .button-send {
+                position: relative;
+                top: auto;
+                left: auto;
+                right: auto;
+                bottom: auto;
+            }
+
+            strong {
+                @include font($gilroy, $normal, 700)
+            }
+        }
+    }
+
+    #main-menu {
+        &>.container {
+            a {
+                @include flex;
+                @include size($footer-height-t);
+                color: $white;
+
+                svg {
+                    @include size(28px);
+                    color: $white;
+                    fill: $white;
+                }
+            }
+        }
+    }
+
+    #chat-menu {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 9;
+
+        .fixed-action-btn {
+            position: relative;
+            padding: 0;
+            left: auto;
+            right: auto;
+            top: auto;
+            bottom: auto;
+
+            #floating-close {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+            }
+
+            &>a {
+                #floating-close {
+                    display: none
+                }
+
+                &>div {
+                    @include flex;
+                }
+
+                // #icon-baloon {
+                //     display: inline-block
+                // }
+            }
+
+            &.active {
+                &>a {
+                    #floating-close {
+                        display: inline-block
+                    }
+
+                    #icon-baloon {
+                        display: none
+                    }
+                }
+
+                #overlay {
+                    display: block
+                }
+            }
+
+            a {
+                // @include size($footer-height-t);
+                @include size(50px);
+                @include flex;
+                @include circle;
+                background-color: transparent;
+                box-shadow: none;
+                overflow: visible;
+                z-index: 4;
+                position: relative;
+
+                svg {
+                    width: 35px;
+                }
+            }
+
+            &>ul {
+                width: 54vh;
+
+                li {
+                    position: relative;
+                    display: block
+                }
+
+                a {
+                    box-shadow: none;
+                }
+            }
+
+            &.active {
+                a {
+                    background-color: $white;
+                    color: $grey-medium-1;
+                }
+            }
+        }
+
+        .right-align {
+            a {
+                margin-left: 10px;
+
+            }
+        }
+
+        strong {
+            color: $white;
+        }
+    }
+}

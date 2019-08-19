@@ -1,0 +1,57 @@
+<template>
+  <svg
+    width="45px"
+    height="45px"
+    viewBox="0 0 45 45"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+  >
+    <g id="ICON---ADD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <circle id="Oval" cx="22.5" cy="22.5" r="22.5"></circle>
+      <g
+        id="Group-11"
+        transform="translate(24.300000, 6.300000)"
+        stroke="#343433"
+        stroke-linecap="round"
+        stroke-width="2.5"
+      >
+        <path
+          d="M0,2.97174132 C1.80091272,0.358742307 5.27637263,-0.737834236 8.35316965,0.523309065 C11.8685774,1.96507442 13.5325262,5.94036508 12.0683165,9.40188635 C11.1128299,11.6600634 9.06326245,13.1427697 6.77726911,13.5"
+          id="Stroke-3"
+        ></path>
+        <path d="M6.3,3.6 L6.3,9.9" id="Stroke-7"></path>
+        <path d="M9,6.3 L3.6,6.3" id="Stroke-9"></path>
+      </g>
+      <circle
+        id="Oval-6"
+        stroke="#343433"
+        stroke-width="2.5"
+        stroke-linecap="round"
+        cx="19.8"
+        cy="20.7"
+        r="6.3"
+      ></circle>
+      <path
+        d="M9,37.8 C9.29505259,33 12.6858794,30.6 19.1724803,30.6 C28.8669103,30.6 29.7,35.8941286 29.7,37.8"
+        id="Path-8"
+        stroke="#343433"
+        stroke-width="2.5"
+        stroke-linecap="round"
+      ></path>
+    </g>
+  </svg>
+</template>
+
+<script>
+export default {
+  name: "IconUserPlus",
+  props: {
+    color: {
+      type: String,
+      required: false,
+      default: "white"
+    }
+  }
+};
+</script>

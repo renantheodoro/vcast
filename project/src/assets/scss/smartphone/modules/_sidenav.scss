@@ -1,0 +1,72 @@
+#slide-out {
+    @include bgapp;
+    
+    width: 80%;
+    max-width: 520px;
+    height: 100%;
+    padding: 60px 0px 30px 0px;
+    box-shadow: none;
+
+    i {
+        font-size: 4rem;
+    }
+
+    .btn {
+        background: $white;
+        color: $black;
+        box-shadow: none;
+        height: auto;
+    }
+
+    #sidenav-content {
+        padding: 0px 30px 0px #{$space-lateral};
+    }
+
+    .collection .collection-item.avatar {
+        min-height: 84px;
+        padding-left: 30px;
+        position: relative;
+        background: transparent;
+    }
+
+    .collection .collection-item.avatar .title {
+        font-size: 24px;
+        padding: 0 10px;
+
+    }
+
+    .simple-list .list-item a {
+        line-height: inherit !important;
+    }
+
+    #sidenav-footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 0 30px 0 #{$space-lateral};
+        color: $grey-light-2;
+
+        #powered,
+        #version {
+            font-size: 12px !important;
+            position: absolute;
+            @include flex;
+        }
+
+        #version {
+            left: 35px;
+            bottom: 33px;
+        }
+
+        #powered {
+            right: 30px;
+            bottom: 30px;
+
+            svg {
+                margin-left: 15px;
+            }
+        }
+
+    }
+}

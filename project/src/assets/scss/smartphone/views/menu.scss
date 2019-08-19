@@ -1,0 +1,38 @@
+#menu {
+    position: relative;
+
+    &-header {
+        padding: 0 $space-lateral;
+    }
+
+    &-footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: $lateral-padding;
+        padding-bottom: $space-lateral;
+
+        &>.row {
+            display: flex;
+            align-items: center;
+
+            .col {
+                padding: 0;
+
+                small {
+                    font-size: $middle;
+                    display: inline-block;
+                    margin-bottom: 5px;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        // @include flex(space-between);
+
+        @media (orientation: landscape) {
+            position: relative;
+        }
+    }
+}

@@ -1,0 +1,237 @@
+#chat {
+    // padding-top: 35px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    .liveCard {
+        height: 33.95%;
+    }
+
+    #chat-list {
+        position: relative;
+        padding-top: 20px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    #loader-messages {
+        @include flex;
+        // height: 40px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+
+        .progress {
+            margin: 0;
+            background-color: $grey-light-1;
+
+            .indeterminate {
+                background-color: $blue-primary;
+            }
+        }
+    }
+}
+
+.message-row {
+    @include flex;
+    width: 100%;
+    margin-bottom: 20px;
+
+
+    &.received {
+        @include flex(flex-start);
+
+        .message-content {
+            background-color: $grey-light-1;
+
+
+            &:before {
+                content: "";
+                display: inline-block;
+                vertical-align: middle;
+                width: 0;
+                height: 0;
+                border-top: 30px solid transparent;
+                border-bottom: 0 solid transparent;
+                border-right: 25px solid #DBDBDE;
+                position: absolute;
+                bottom: 0;
+                left: -15px;
+            }
+        }
+    }
+
+    &.sent {
+        @include flex(flex-end);
+
+        .message-content {
+            background-color: $green-2;
+
+            &:before {
+                content: "";
+                display: inline-block;
+                vertical-align: middle;
+                width: 0;
+                height: 0;
+                border-top: 30px solid transparent;
+                border-bottom: 0 solid transparent;
+                border-left: 25px solid $green-2;
+                position: absolute;
+                bottom: 0;
+                right: -15px;
+            }
+        }
+    }
+
+    .message {
+        max-width: 400px;
+
+        &-first-child {
+            margin-top: 35px;
+        }
+
+        &-content {
+            padding: 15px;
+            border-radius: 13px;
+            position: relative;
+        }
+
+        &-title {
+            @include font($gilroy-bold, $big, 700);
+            color: $grey-medium-1;
+            line-height: 20px;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        &-text {
+            @include font($gilroy, $big);
+            color: $grey-medium-1;
+            line-height: 23px;
+        }
+
+        &-action {
+            margin-top: 5px;
+            padding: 0 8px 0 15px;
+            @include flex(space-between);
+
+            &>div,
+            .message-info,
+            .message-like-count {
+                @include flex(space-between);
+            }
+        }
+
+        &-info {
+            a {
+                @include font($gilroy-bold, $middle, 700);
+                color: $grey-medium-1;
+
+                &:after {
+                    content: "•";
+                    display: inline-block;
+                    margin: 0 10px;
+                }
+
+                &:focus,
+                &:hover {
+                    color: $blue-primary;
+                }
+            }
+
+            span {
+                @include font($gilroy-bold, $middle, 700);
+                color: $grey-medium-1;
+            }
+        }
+
+        &-like-count {
+            display: inline-block;
+            color: $white;
+            border-radius: 11px;
+            padding: 3px 6px;
+
+            // @include flex;
+
+            &.blue {
+                background-color: $blue-third !important;
+            }
+
+            &.grey {
+                background-color: $grey-light-3 !important;
+            }
+
+            i,
+            svg {
+                width: 12px;
+                display: inline-block;
+                // font-size: 12px;
+                margin-right: 5px;
+            }
+
+            .likes {
+                @include font($gilroy, $small-middle, 500);
+            }
+
+        }
+
+        &-status {
+            display: inline-block;
+            margin-left: 5px;
+            min-width: 18px;
+            height: 15px;
+
+            svg {
+                display: inline-block;
+                height: 100%;
+            }
+        }
+    }
+}
+
+.block-send {
+    margin-bottom: 40px;
+
+    strong {
+        @include font($gilroy-bold, $big, 700);
+        color: $black-2;
+        line-height: 23px;
+        margin-bottom: 5px;
+        display: block
+    }
+
+    p {
+        @include font($gilroy, $big);
+        color: $black-2;
+        line-height: 23px;
+    }
+
+    textarea {
+        @include font($gilroy, $big);
+        color: $black-2;
+        line-height: 23px;
+        border: none;
+        border-bottom: 1px solid $blue-primary;
+
+        border-right: none !important;
+        border-left: none !important;
+
+        &::placeholder {
+            @include font($gilroy, $big);
+            color: $black-2;
+            line-height: 23px;
+        }
+
+        &:focus {
+            outline: none;
+            border-right: none !important;
+            border-left: none !important;
+            border-bottom: 2px solid $blue-primary;
+            // box-shadow: 0 1px 0 0 $blue-primary !important;
+            box-shadow: none !important;
+        }
+
+    }
+}

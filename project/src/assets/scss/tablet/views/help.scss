@@ -1,0 +1,16 @@
+#help {
+  padding: $space-lateral;
+
+  p {
+    @include font($gilroy, $bigger, 500);
+    line-height: 1.5;
+    overflow-y: auto;
+    padding: 10px 50px;
+
+    strong {
+      @include font($gilroy-bold, $bigger, 600);
+
+    }
+
+  }
+}

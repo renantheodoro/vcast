@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="<%= htmlWebpackPlugin.options.meta.viewport %>">
+  <!-- <meta http-equiv="Content-Security-Policy"
+    content="default-src *; media-src *;style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'"> -->
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <link href="css/video-js.css" rel="stylesheet">
+  <title>vCast | Bradesco Prime</title>
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but vcast doesn't work properly without JavaScript enabled. Please enable it to
+      continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+  <script src="cordova.js"></script>
+
+  <script src="js/video.js"></script>
+  <script src="js/videojs-contrib-hls.min.js"></script>
+  <script src="js/videojs-contrib-quality-levels.min.js"></script>
+  <script src="js/videojs-hls-quality-selector.min.js"></script>
+  <script src="js/axios.min.js"></script>
+  <script src="js/vdplayer.js?v1"></script>
+</body>
+
+</html>

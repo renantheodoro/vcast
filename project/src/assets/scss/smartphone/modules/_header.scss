@@ -1,0 +1,50 @@
+#header {
+    // height: $header-height-t;
+
+    &.none {
+        @media (orientation: landscape) {
+            display: none;
+        }
+    }
+
+    .header-filled {
+        @extend %header-filled;
+
+        span {
+            display: inline-block
+        }
+
+        strong {
+            font-size: $bigger;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        #circle-status {
+            @include size(13px);
+            @include circle;
+            display: inline-block;
+            background-color: $red;
+            margin-left: 4px;
+
+            &.online {
+                background-color: $green;
+            }
+        }
+    }
+
+    .header-bottom {
+        width: 100%;
+        background-color: $grey-light-1;
+        // padding: 10px 0
+        padding: 0
+    }
+
+
+    .row {
+        &>.col {
+            padding: 0;
+        }
+    }
+
+}

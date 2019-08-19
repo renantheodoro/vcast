@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="27px" height="27px" viewBox="0 0 27 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>ICON - MINIMIZAR</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="8.3.-Chat-Horizontal---Enviado" transform="translate(-33.000000, -44.000000)" stroke="#FFFFFF" stroke-width="2">
+            <g id="ICON---MINIMIZAR" transform="translate(47.000000, 57.000000) rotate(-270.000000) translate(-47.000000, -57.000000) translate(30.000000, 40.000000)">
+                <polyline id="Stroke-1" points="5.1 18.7 16.15 18.7 16.15 29.75"></polyline>
+                <polyline id="Stroke-3" points="29.75 16.15 18.7 16.15 18.7 5.1"></polyline>
+                <path d="M18.7,16.15 L29.75,5.1" id="Stroke-5"></path>
+                <path d="M5.1,29.75 L16.15,18.7" id="Stroke-7"></path>
+            </g>
+        </g>
+    </g>
+</svg>

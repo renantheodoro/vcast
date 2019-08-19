@@ -1,0 +1,257 @@
+// margens
+.no-mgn-l {
+    @include no-mgn(left)
+}
+
+.no-mgn-t {
+    @include no-mgn(top)
+}
+
+.no-mgn-b {
+    @include no-mgn(bottom)
+}
+
+.no-mgn-r {
+    @include no-mgn(right)
+}
+
+.mgn-top-default {
+    margin-top: $space-lateral
+}
+
+.mgn-right-default {
+    margin-right: $space-lateral
+}
+
+.mgn-bottom-default {
+    margin-bottom: $space-lateral
+}
+
+.mgn-left-default {
+    margin-left: $space-lateral
+}
+
+// paddings
+.no-pad-l {
+    @include no-pad(left)
+}
+
+.no-pad-t {
+    @include no-pad(top)
+}
+
+.no-pad-b {
+    @include no-pad(bottom)
+}
+
+.no-pad-r {
+    @include no-pad(right)
+}
+
+.pad-space-lateral {
+    padding: $space-lateral;
+}
+
+// font sizes
+.smallest {
+    font-size: $smallest !important;
+}
+
+.smaller {
+    font-size: $smaller !important;
+}
+
+.small-middle {
+    font-size: $small-middle !important;
+}
+
+.small {
+    font-size: $small !important;
+}
+
+.middle {
+    font-size: $middle !important;
+}
+
+.normal {
+    font-size: $normal !important;
+}
+
+.big {
+    font-size: $big !important;
+}
+
+.bigger {
+    font-size: $bigger !important;
+}
+
+.biggest {
+    font-size: $biggest !important;
+}
+
+.super-big {
+    font-size: $super-big !important;
+}
+
+.super-bigger {
+    font-size: $super-bigger !important;
+}
+
+.super-biggest {
+    font-size: $super-biggest !important;
+}
+
+.giant {
+    font-size: $giant !important;
+}
+
+.super-giant {
+    font-size: $super-giant !important;
+}
+
+.uppercase {
+    text-transform: uppercase
+}
+
+// font colors
+.color-blue-primary {
+    color: $blue-primary;
+}
+
+.color-blue-secondary {
+    color: $blue-secondary;
+}
+
+.color-blue-third {
+    color: $blue-third;
+}
+
+.color-grey {
+    color: $grey;
+}
+
+.color-grey-medium-1 {
+    color: $grey-medium-1;
+}
+
+.color-grey-medium-2 {
+    color: $grey-medium-2;
+}
+
+.color-grey-light-1 {
+    color: $grey-light-1;
+}
+
+.color-grey-light-2 {
+    color: $grey-light-2;
+}
+
+.color-grey-light-3 {
+    color: $grey-light-3;
+}
+
+.color-grey-light-4 {
+    color: $grey-light-4;
+}
+
+.color-grey-light-5 {
+    color: $grey-light-5;
+}
+
+.color-grey-light-6 {
+    color: $grey-light-6;
+}
+
+.color-grey-icon {
+    color: $grey-icon;
+}
+
+.color-white {
+    color: $white;
+}
+
+.color-green {
+    color: $green;
+}
+
+.color-green-2 {
+    color: $green-2;
+}
+
+.color-yellow {
+    color: $yellow;
+}
+
+.color-red {
+    color: $red;
+}
+
+.color-black {
+    color: $black;
+}
+
+.color-black-2 {
+    color: $black-2;
+}
+
+.color-bg-gradient {
+    color: $bg-gradient;
+}
+
+// shapes
+.circle {
+    @include circle;
+}
+
+// flex
+.flex-center {
+    @include flex;
+}
+
+.flex-right {
+    @include flex(flex-end);
+}
+
+.flex-left {
+    @include flex(flex-start);
+}
+
+.flex-between {
+    @include flex(space-between, center)
+}
+
+.flex-v-center {
+    display: flex;
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column !important
+}
+
+// sizes
+.fill-size {
+    @include size(100%)
+}
+
+.height-full {
+    height: 100% !important
+}
+
+// position
+.absolute {
+    position: absolute;
+}
+
+.static {
+    position: static;
+}
+
+.relative {
+    position: relative;
+}
+
+.x-y-0 {
+    top: 0;
+    left: 0;
+}

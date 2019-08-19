@@ -1,0 +1,32 @@
+#sideslide {
+    @include bgapp;
+}
+
+#about {
+    @include size(100%);
+    padding-left: 50px;
+    padding-right: 50px;
+
+    #text {
+        @include font($gilroy, $bigger, 600);
+        line-height: 1.5;
+    }
+
+    p {
+        strong {
+            @include font($gilroy-bold, $bigger, 600);
+            line-height: 1.5;
+        }
+
+        margin-bottom: 50px;
+    }
+
+    #copyright {
+        margin-top: 85px;
+
+        div {
+            margin-top: 15px;
+        }
+    }
+
+}

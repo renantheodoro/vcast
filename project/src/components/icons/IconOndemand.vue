@@ -1,0 +1,25 @@
+<template>
+  <svg xmlns="http://www.w3.org/2000/svg" width="112" height="136" viewBox="0 0 112 136">
+    <g
+      fill="none"
+      fill-rule="evenodd"
+      stroke="#8E8E8E"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="4"
+    >
+      <path
+        d="M98.927 133.19H19.983c-5.876 0-10.64-4.726-10.64-10.555V62.047h100.223v60.588c0 5.829-4.763 10.555-10.639 10.555zM18.847 86.047h82.944M46.495 62.047l-24.192 24M72.415 62.047l-24.192 24M98.335 62.047l-24.192 24"
+      ></path>
+      <path
+        d="M8.868 34.254L81.38 3.291c5.398-2.305 11.656.168 13.98 5.523l6.04 13.923-92.057 39.31L3.3 48.123c-2.323-5.355.17-11.564 5.567-13.869zM36.127 22.619L23.167 55.19M60.319 12.333l-12.96 32.571M82.783 3.761L70.687 35.476"
+      ></path>
+    </g>
+  </svg>
+</template>
+
+<script>
+export default {
+  name: "IconOndemand"
+};
+</script>

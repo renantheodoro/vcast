@@ -1,0 +1,104 @@
+#home {
+    @include bgapp();
+    // padding-bottom: 40px;
+
+    a {
+        color: $black !important;
+    }
+
+    .listTitle {
+        // margin-top: 15px;
+        // padding-left: $space-lateral;
+
+        font-family: $gilroy-bold;
+        font-size: $big;
+        font-weight: normal;
+        letter-spacing: normal;
+        margin-bottom: 10px;
+    }
+
+    .carousel {
+        // height: 210px !important;
+        height: auto !important;
+    }
+
+    .owl-carousel .owl-stage {
+        left: $space-lateral;
+        // left: 0;
+    }
+
+    .owl-item {
+        width: 110px !important;
+    }
+
+    .card {
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+        background-color: transparent;
+
+        // p {
+        //     font-family: $gilroy;
+        //     font-size: $small;
+        // }
+
+        .card-image {
+            width: 100% !important;
+            height: 160px !important;
+            border: 0;
+            overflow: hidden;
+            margin-bottom: 10px;
+
+            img {
+                @include size(100%);
+                object-fit: cover;
+            }
+        }
+
+        .card-name {
+            // font-weight: bold;
+            // padding: 5px 0 !important;
+            // overflow: hidden;
+            // height: auto;
+
+            p {
+                font-family: $gilroy-bold;
+                font-size: $normal;
+                font-weight: normal;
+                letter-spacing: normal;
+                margin-bottom: 5px;
+            }
+        }
+
+        .card-subtitle {
+            // font-weight: bold;
+            // padding: 0 !important;
+            // height: auto;
+            // overflow: hidden;
+            // margin-bottom: 10px;
+
+            p {
+                font-family: $gilroy;
+                font-size: $normal;
+                // line-height: 1.15;
+                // max-height: 2.2rem;
+                letter-spacing: normal;
+                margin-bottom: 10px;
+                overflow: hidden;
+            }
+        }
+
+        .card-date {
+            border: 0;
+            // padding: 0 !important;
+            // font-family: $gilroy-bold;
+            // font-size: $small;
+            // line-height: 1.08;
+            // top: 5px;
+            font-family: $gilroy-bold;
+            font-size: $middle;
+
+        }
+
+    }
+}

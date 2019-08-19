@@ -1,0 +1,69 @@
+<head>
+    <link href="css/video-js.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="player_container" style="width: 960px; height:540px; background-color: black">
+        <!--<video style="width: 100%; height:100%" class="video-js vjs-default-skin vjs-big-play-centered"></video>-->
+    </div>
+
+    <br />
+
+    <input type="button" id="btn_play" value="Play" />
+    <input type="button" id="btn_pause" value="Pause" />
+    <input type="button" id="btn_full" value="Full" />
+
+    <script src="js/video.js"></script>
+    <script src="js/videojs-contrib-hls.min.js"></script>
+    <script src="js/videojs-contrib-quality-levels.min.js"></script>
+    <script src="js/videojs-hls-quality-selector.min.js"></script>
+    <script src="js/axios.min.js"></script>
+
+    <!--/ Usar da aplicação-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Usar da aplicação /-->
+    <script src="js/vdplayer.js"></script>
+
+    <script>
+        //ondemand : 657084
+        //live : 657082  
+            
+        VDPlayer.Initialize(
+            657083,
+            3134737,
+            437,
+            true,
+            'sessionId',
+            '127.0.0.1',
+            'useragent',
+            '82210B50-AAF2-4BCD-9B76-D2C2EC65889E',
+            'player_container',
+            false,
+            true,
+            function () {
+                console.log("transmissão finalizada");
+                VDPlayer.Destroy();
+            }, function(data){
+               console.log({
+                   'data' : data
+               });     
+            }
+        );
+
+        $(function () {
+            $('#btn_play').on('click', function (e) {
+                VDPlayer.Play();
+            });
+
+            $('#btn_pause').on('click', function (e) {
+                VDPlayer.Pause();
+            });
+
+            $('#btn_full').on('click', function (e) {
+                VDPlayer.FullScreen();
+            });
+        });
+
+    </script>
+
+</body>

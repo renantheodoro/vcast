@@ -1,0 +1,97 @@
+// #close {
+//     position: fixed;
+//     right: 25px;
+//     top: 200px;
+// }
+
+#transmission {
+
+    padding: 30px #{$space-lateral};
+
+    &-media {
+        width: 250px;
+        height: 362px;
+        position: relative;
+        @include flex;
+        margin: 0 auto;
+
+        @media (max-width: 600px) {
+            width: 170px;
+            height: 247px;
+        }
+    }
+
+    &-info {
+        padding-top: 15px !important;
+        max-width: 350px !important;
+
+        @media (max-width: 600px) {
+            max-width: 170px;
+        }
+
+        .label {
+            @include font($gilroy, $middle, 500);
+            line-height: 0.93;
+            text-align: center;
+
+            @media (max-width: 600px) {
+                font-size: $small
+            }
+        }
+
+        strong {
+            @include font($gilroy-bold, $normal, 500);
+            line-height: 0.93;
+            text-align: center;
+
+            @media (max-width: 600px) {
+                font-size: $small
+            }
+        }
+    }
+
+    &-buttons {
+        @include flex;
+
+        .button-action {
+            width: 100%;
+        }
+    }
+
+    &-text {
+        padding-top: 10px;
+
+        .item-title {
+            text-align: center;
+            @include font($gilroy-bold, $bigger, 500);
+            line-height: 1.27;
+
+            @media (max-width: 600px) {
+                text-align: left;
+                font-size: $normal
+            }
+        }
+
+        .item-subtitle {
+            text-align: center;
+            @include font($gilroy, $middle);
+            line-height: 1.27;
+
+            @media (max-width: 600px) {
+                text-align: left;
+                font-size: $normal
+            }
+        }
+
+        .item-description {
+            @include font($gilroy, $normal);
+            line-height: 1.33;
+            padding: 8px 0;
+
+            @media (max-width: 600px) {
+                text-align: left;
+                font-size: $middle
+            }
+        }
+    }
+}

@@ -1,0 +1,63 @@
+#privacity {
+    @include bgapp;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 0px 50px #{$space-lateral};
+    font-family: $gilroy;
+    line-height: 1.5;
+    @include size(100%);
+
+
+    // #termo {
+    h2,
+    h3,
+    p,
+    ol,
+    ul {
+        display: block;
+        margin-bottom: 30px;
+
+
+        &:last-child {
+            margin-bottom: 0
+        }
+    }
+
+    ol {
+        list-style: decimal;
+
+        li {
+            font-size: $bigger;
+            font-weight: 700;
+
+        }
+    }
+
+    h3 {
+        font-size: $bigger;
+        font-weight: 700;
+
+    }
+
+    ul {
+        padding-left: 20px;
+
+        li {
+            list-style: disc;
+            margin-bottom: 20px;
+        }
+    }
+
+    ul li,
+    p {
+        font-size: $big;
+
+    }
+
+    a {
+        color: $blue-primary;
+        display: inline;
+    }
+}

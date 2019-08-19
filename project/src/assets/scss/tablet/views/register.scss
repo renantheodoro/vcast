@@ -1,0 +1,50 @@
+#cadastro {
+    #login-link {
+        @include font($gilroy, $big, 600);
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+
+        i {
+            font-size: $normal;
+            padding-top: 5px;
+        }
+    }
+
+    #form {
+        padding-top: 30px;
+        margin-bottom: 0;
+
+        @media (max-width: 600px) {
+            padding-top: 30px;
+        }
+
+        .input-field {
+            input {
+                // text-align: center;
+                // margin: 0 !important;
+                // @include font($montserrat-regular, $normal);
+
+                &::placeholder {
+                    // @include font($montserrat-regular, $normal);
+                    color: $grey;
+                }
+            }
+        }
+
+        &-footer {
+            height: 120px;
+            margin-bottom: 0px;
+            position: relative;
+            padding: 0px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-start;
+            padding-bottom: 25px;
+        }
+    }
+
+    & .register-button {
+        margin-top: 30px;
+    }
+}

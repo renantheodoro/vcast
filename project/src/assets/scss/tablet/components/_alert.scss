@@ -1,0 +1,82 @@
+.alert-wrapper {
+    box-shadow: none !important;
+
+    .alert-head {
+        text-align: center;
+        padding: 20px;
+        border-bottom: 1px solid #ECECEC;
+
+        h2 {
+            @include font($gilroy, $big, 700);
+            color: $black;
+        }
+    }
+
+    .alert-message {
+        padding: 18px 14px !important;
+        @include font($gilroy, $normal);
+        color: $black;
+        text-align: center;
+    }
+
+    .alert-input-group {
+        margin-top: -15px;
+        padding: 0 18px;
+
+        input {
+            @extend %input-style;
+            background-color: #ebe8e8 !important;
+            color: #000;
+            border-bottom: none;
+            margin-bottom: 10px;
+            padding: 0 10px;
+
+            &:focus {
+                border-bottom: none !important;
+                box-shadow: none !important;
+                margin-bottom: 10px;
+            }
+
+            &::placeholder {
+                color: #959595;
+                // font-size: $small;
+            }
+        }
+    }
+
+    .alert-button-group {
+        padding: 0 18px 26px 18px;
+
+        .alert-button {
+            @extend %button-action-style;
+
+            &:focus {
+                background-color: $blue-primary !important
+            }
+
+            .alert-button-inner {
+                text-align: center;
+                @include flex
+            }
+
+            &.grey-button {
+                background-color: #ebe8e8 !important;
+                margin-right: 0px;
+                margin-bottom: 10px;
+                width: 100%;
+                color: $black;
+                text-transform: lowercase;
+
+                &:focus {
+                    background-color: #ebe8e8 !important;
+                    color: $black;
+                }
+            }
+
+            &.btn-full {
+                width: 100%;
+                margin-right: 0
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+#help {
+  padding: $space-lateral;
+
+  p {
+    @include font($gilroy, $normal, 500);
+    line-height: 1.5;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    @include size(100%);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+
+    height: auto;
+    padding: 0;
+
+
+    strong {
+      @include font($gilroy-bold, $normal, 600);
+      font-size: $normal
+    }
+
+  }
+}

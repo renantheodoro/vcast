@@ -1,0 +1,250 @@
+#app {
+    %circle-style-checked {
+        @include size(35px);
+        @include circle;
+        background-color: $blue-primary;
+        border: 2px solid transparent;
+        top: -4px;
+        // right: 0;
+        // left: 4px;
+        z-index: 0;
+        margin: 0;
+    }
+
+    %circle-style-not-checked {
+        @include size(35px);
+        @include circle;
+        background-color: $white;
+        border: 2px solid transparent;
+        top: -4px;
+        // right: 0;
+        // left: auto;
+        z-index: 0;
+        margin: 0;
+    }
+
+    %check-style {
+        top: 2px;
+        left: 4px;
+        // right: 20px;
+        width: 10px;
+        height: 20px;
+        border-top: 2px solid transparent;
+        border-left: 2px solid transparent;
+        border-right: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        border-radius: 0;
+        -webkit-transform: rotateZ(37deg);
+        transform: rotateZ(43deg);
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        position: absolute;
+        z-index: 1;
+        background-color: transparent;
+        margin: 0;
+    }
+
+    // radio and checkbox
+    .option {
+        position: relative;
+        @include size(100%);
+        @include flex(flex-start, center);
+        // margin-bottom: 20px;
+
+        span {
+            position: relative;
+            width: $item-text-width;
+            padding-left: 50px;
+            margin-right: 20px;
+
+            @include font($gilroy, $bigger, 800);
+            color: $blue-secondary;
+            text-transform: uppercase;
+
+            @include flex(center, flex-start, column);
+
+
+        }
+
+        // CHECKBOX
+        [type=checkbox].radio-check:checked+span {
+            &:before {
+                @extend %check-style;
+            }
+
+            &:after {
+                @extend %circle-style-checked;
+            }
+        }
+
+        [type=checkbox].radio-check:not(:checked)+span {
+            &:before {
+                @extend %check-style;
+            }
+
+            &:after {
+                @extend %circle-style-not-checked;
+            }
+        }
+
+        // RADIO
+        [type=radio].radio-check:checked+span {
+            &:before {
+                @extend %circle-style-checked;
+            }
+
+            &:after {
+                @extend %check-style;
+            }
+        }
+
+        [type=radio].radio-check:not(:checked)+span {
+            &:before {
+                @extend %circle-style-not-checked;
+            }
+
+            &:after {
+                @extend %check-style;
+            }
+        }
+
+    }
+
+    // inputs
+    input:not([type]):focus:not([readonly]),
+    input[type="text"]:not(.browser-default):focus:not([readonly]),
+    input[type="password"]:not(.browser-default):focus:not([readonly]),
+    input[type="email"]:not(.browser-default):focus:not([readonly]),
+    input[type="url"]:not(.browser-default):focus:not([readonly]),
+    input[type="time"]:not(.browser-default):focus:not([readonly]),
+    input[type="date"]:not(.browser-default):focus:not([readonly]),
+    input[type="datetime"]:not(.browser-default):focus:not([readonly]),
+    input[type="datetime-local"]:not(.browser-default):focus:not([readonly]),
+    input[type="tel"]:not(.browser-default):focus:not([readonly]),
+    input[type="number"]:not(.browser-default):focus:not([readonly]),
+    input[type="search"]:not(.browser-default):focus:not([readonly]),
+    textarea.materialize-textarea:focus:not([readonly]) {
+        border-bottom: 1px solid $blue-primary !important;
+        box-shadow: 0 1px 0 0 $blue-primary !important;
+    }
+
+    .input-field {
+        position: relative;
+        font-size: 15px;
+
+        margin-top: 0;
+        margin-bottom: 20px;
+
+        @media (max-width: 600px),
+        (max-width: 1200px) and (orientation: landscape) {
+            margin-bottom: 10px;
+        }
+
+        &.with-tooltip {
+            margin-bottom: 10px;
+            padding-bottom: 20px;
+        }
+
+        input {
+            @extend %input-style;
+        }
+
+        label {
+            @include font($gilroy, $super-big, 600);
+            color: $grey-light-4;
+            display: block;
+            width: 100%;
+            line-height: 10px;
+
+            &.active {
+                color: $blue-primary;
+                transform: translateY(-15px) scale(0.7);
+                transform: translateY(-5px) scale(0.7);
+            }
+        }
+
+        .helper-text {
+            color: red !important;
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            font-size: $small;
+
+            &.wrong {}
+        }
+
+        .show-password {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 10px;
+            right: 0;
+            // transform: translateY(-50%);
+
+            font-size: $big;
+            color: $blue-primary;
+            @include flex;
+            opacity: 0.3;
+
+            &.show_active {
+                opacity: 1;
+            }
+        }
+    }
+
+    textarea {
+        border-right: none !important;
+        border-left: none !important;
+
+        &:focus {
+            border-right: none !important;
+            border-left: none !important;
+        }
+    }
+
+    .chat-textarea {
+        margin-bottom: 0;
+        width: calc(100% - 35px - 10px);
+        height: 35px;
+
+        .chat-input {
+            border-radius: 20px;
+            background-color: $grey-light-5;
+            padding: 9px 15px;
+            @include size(100%);
+            display: inline-block;
+            margin-bottom: 0;
+            border-bottom: none;
+            box-shadow: none;
+            border-top: 0 !important;
+            color: $black;
+
+            &::placeholder {
+                @include font($gilroy, $middle, normal);
+                color: $black;
+            }
+
+            &:focus {
+                border-bottom: 0 !important;
+                box-shadow: none !important;
+                outline: none;
+            }
+        }
+    }
+
+    .input-field {
+        input {
+            font-size: $normal;
+
+            &::placeholder {
+                // opacity: 0.6; nb
+                font-size: $normal;
+            }
+        }
+
+        label {
+            font-size: $normal;
+        }
+    }
+
+}

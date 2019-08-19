@@ -1,0 +1,66 @@
+// Colors
+$blue-primary: #17195c;
+$blue-secondary:#011025;
+$blue-third: #0e1e64;
+$grey:#231f20;
+$grey-medium-1: #343433;
+$grey-medium-2: #777777;
+$grey-light-1:#DBDBDB;
+$grey-light-2:#A6A6A6;
+$grey-light-3:#afafaf;
+$grey-light-4:#9b9b9b;
+$grey-light-5:#f1f1f1;
+$grey-light-6: #CBCBCB;
+$grey-icon: #8e8e8e;
+$white: #fff;
+$green: #6ab04c;
+$green-2: #daf5c4;
+$yellow: #f6e58d;
+$red: red;
+$black: #000;
+$black-2: #000100;
+$bg-gradient: #fff;
+
+// Fonts Family
+$gilroy: 'gilroy-regular';
+$gilroy-bold: 'gilroy-bold';
+$montserrat-light: 'montserrat-light';
+$montserrat-regular: 'montserrat-regular';
+$montserrat-semibold: 'montserrat-semibold';
+$montserrat-bold: 'montserrat-bold';
+$montserrat-regular: 'montserrat-regular';
+
+// Font Size
+$smallest: 0.5rem; // 8 px
+$smaller: 0.625rem; // 10 px
+$small-middle: 0.6875rem; // 11 px
+$small: 0.75rem; // 12 px
+$middle: 0.875rem; // 14 px
+$normal: 1rem; // 16 px
+$big: 1.125rem; // 18 px
+$bigger: 1.25rem; // 20 px
+$biggest: 1.375rem; // 22 px
+$super-big: 1.5rem; // 24 px
+$super-bigger: 1.625rem; // 26 px
+$super-biggest: 1.75rem; // 28 px
+$giant: 1.875rem; // 30 px
+$super-giant: 2rem; // 32 px
+
+/* modules variables */
+
+$space-lateral: 20px;
+$lateral-padding: 0 #{$space-lateral};
+
+/* --- tablet */
+// $header-height-t: 180px;
+$header-height-t: 157.03px;
+$header-top-padding-t: 30px 0 18px;
+$header-filled-height-t: 97.06px;
+$footer-height-t: 82px;
+$list-header-height: 142px;
+
+/* --- smartphone */
+$header-height-s: 78px;
+$header-top-padding-s: 26px 0 7px;
+$header-filled-height-s: 78px;
+$footer-height-s: 60px;

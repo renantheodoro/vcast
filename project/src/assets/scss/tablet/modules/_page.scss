@@ -1,0 +1,79 @@
+$duration: .3s;
+$timing: ease;
+
+#page {
+    position: fixed;
+    top: 0;
+    left: 100vw;
+    width: 100%;
+    height: 100vh;
+    background-color: $grey-light-1;
+    z-index: 98;
+
+    // animation: hide $duration $timing;
+    transition-duration: $duration;
+    transition-timing-function: $timing;
+
+    &.active {
+        // animation: show $duration $timing;
+        left: 0vw;
+    }
+
+    &-header {
+        width: 100%;
+        height: 120px;
+        background-color: $blue-primary;
+        color: $white;
+
+        padding-top: 65px;
+        padding-bottom: 30px;
+
+        margin-bottom: 30px;
+
+        .row {
+            @include flex(flex-start, center);
+
+            .col {
+                padding: 0
+            }
+        }
+
+        strong {
+            @include font($gilroy, $bigger, 700);
+        }
+    }
+
+    .item-content {
+        .item-text {
+            .item-innet {
+                strong {
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        &:last-child {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@keyframes show {
+    from {
+        left: 100vh
+    }
+
+    to {
+        left: 0vh
+    }
+}
+
+@keyframes hide {
+    from {
+        left: 0vh
+    }
+
+    to {
+        left: 100vh
+    }
+}
